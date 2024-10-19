@@ -1,5 +1,7 @@
 # Vectorization 101: Trigram Hashing for Efficient Embeddings in NLP
 
+inspired by: Tokenizer-Free Generative LLMs via Sparse Representations for Memory-Efficient Embeddings `https://arxiv.org/abs/2406.19223`
+
 ### Trigram Hashing: A Lightweight Alternative for Resource-Constrained NLP
 
 As large-scale models like GPT-4 and BERT dominate the NLP landscape, memory-efficient techniques like trigram hashing continue to offer significant value. Especially in scenarios where resources are constrained, trigram hashing provides a flexible and efficient method for text vectorization. This blog post explores how trigram hashing works, its practical advantages, and how it handles challenges like noisy neighbors in vector stores.
