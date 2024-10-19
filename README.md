@@ -134,6 +134,8 @@ This ensures that all embeddings are of equal length, enabling efficient compari
 
 ### Comparing Embeddings with Cosine Similarity
 
+![](https://miro.medium.com/v2/resize:fit:1400/0*_1SirbdVf23_uKNN.png)
+
 To compare word embeddings, cosine similarity is often used. This measures the angle between two vectors, providing a way to quantify the similarity between two words’ embeddings:
 
 ```python
