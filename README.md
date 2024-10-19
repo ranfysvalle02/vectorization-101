@@ -1,5 +1,7 @@
 # Tokenizer-Free Trigram Hashing for Efficient Embeddings
 
+This method is commonly used for tasks such as string comparison, similarity measurement, and indexing in databases.
+
 inspired by: [Tokenizer-Free Generative LLMs via Sparse Representations for Memory-Efficient Embeddings ](https://arxiv.org/abs/2406.19223)
 
 `https://arxiv.org/abs/2406.19223`
