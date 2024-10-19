@@ -12,13 +12,7 @@ Trigram hashing and the Tokenization-Free approach are particularly useful in se
 
 2. **Real-Time Applications**: The efficiency of trigram hashing makes it suitable for real-time applications where quick responses are required. This includes tasks like search, real-time translation, chatbots, and other interactive systems.
 
-3. **Handling Noisy or Inconsistent Data**: The T-Free approach can handle variable-length inputs and is robust to misspellings and out-of-vocabulary terms. This makes it useful in scenarios where the input data may be noisy or inconsistent, such as user-generated content or transcriptions of spoken language.
-
-4. **Cross-Lingual Transfer Learning**: T-Free shows significant improvements in cross-lingual transfer learning, making it useful for applications that need to handle multiple languages.
-
-In terms of the meaning that can be captured, trigram hashing captures the structural patterns in the text. It breaks down words into overlapping trigrams (three-character sequences), which can capture meaningful linguistic features. For example, the trigrams in the word "running" capture the root word "run" and the gerund suffix "ing", both of which carry semantic meaning. 
-
-Moreover, by hashing these trigrams into a fixed-size vocabulary, the method can capture the distinctiveness of different words and their variations. This allows it to handle synonyms, antonyms, and other semantic relationships between words. However, it's worth noting that while trigram hashing can capture these aspects of meaning, it does not inherently understand deeper linguistic or semantic concepts - these are typically learned during the training of the larger language model.
+3. **Handling Noisy or Inconsistent Data**: The Tokenization-Free approach can handle variable-length inputs and is robust to misspellings and out-of-vocabulary terms. This makes it useful in scenarios where the input data may be noisy or inconsistent, such as user-generated content or transcriptions of spoken language.
 
 #### The Process: Creating Trigram Embeddings
 Trigram hashing works by breaking down words into overlapping trigrams (three-character sequences), then hashing these trigrams into fixed-size vocabulary indices. The method captures the structural patterns in the text without relying on a vast pre-built vocabulary, allowing for a fast, resource-efficient encoding process.
