@@ -1,4 +1,4 @@
-# Tokenizer-Free Trigram Hashing for Efficient Embeddings in NLP
+# Tokenizer-Free Trigram Hashing for Efficient Embeddings
 
 inspired by: [Tokenizer-Free Generative LLMs via Sparse Representations for Memory-Efficient Embeddings ](https://arxiv.org/abs/2406.19223)
 
