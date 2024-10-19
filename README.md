@@ -136,7 +136,7 @@ This ensures that all embeddings are of equal length, enabling efficient compari
 
 ![](https://miro.medium.com/v2/resize:fit:1400/0*_1SirbdVf23_uKNN.png)
 
-To compare word embeddings, cosine similarity is often used. This measures the angle between two vectors, providing a way to quantify the similarity between two words’ embeddings:
+To compare word embeddings, cosine similarity is often used. The inner product (IP) of normalized vector embeddings is equivalent to cosine similarity. This measures the angle between two vectors, providing a way to quantify the similarity between two words’ embeddings:
 
 ```python
 def cosine_similarity(vec1, vec2):
