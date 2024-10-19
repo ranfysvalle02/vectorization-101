@@ -161,6 +161,8 @@ As larger models become increasingly resource-intensive, trigram hashing remains
 | **BERT** | A bidirectional transformer model that learns contextual representations of words. | Captures complex contextual relationships between words, producing highly accurate embeddings. | Computationally expensive, requires large amounts of training data. | When the highest possible accuracy is needed, and computational resources are abundant. |
 | **ELMO** | A deep contextualized word representation model that learns character-level representations and combines them to produce word-level representations. | Captures contextual information effectively, handles out-of-vocabulary words well. | Computationally expensive, requires significant training data. | When contextual information is crucial, and computational resources are abundant. |
 
+Tokenization-Free shares some similarities with FastText, like representing words with subword units (character n-grams). However, T-FREE moves beyond tokenization entirely, using sparse representations based on hashed character triplets to generate embeddings directly from raw text, while FastText still relies on tokenization with subword embeddings. T-FREE’s innovation is in its memory efficiency and performance on cross-lingual tasks, offering an improvement over traditional models like FastText by eliminating tokenization altogether, allowing for simpler and more scalable embedding methods.
+
 **Choosing the Right Alternative:**
 
 * **Computational Resources:** Consider the available computational resources, as some models are more demanding than others.
