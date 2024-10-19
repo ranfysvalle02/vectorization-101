@@ -156,8 +156,6 @@ Top similar embeddings: [('bat', 0.9718733783459191), ('mat', 0.9718733783459191
 
 In this case, "hat" becomes grouped with "bat" and "mat," even though the meanings differ. This highlights a limitation of trigram hashing—its simplicity can sometimes lead to collisions in noisy or crowded data environments.
 
-### Real-World Applications: Dealing with Noisy Neighbors
-
 The noisy neighbors effect is particularly relevant in real-world scenarios like search engines or recommendation systems. In a **search engine**, trigram hashing might cause documents with overlapping trigrams (e.g., "cat," "bat," and "mat") to appear together in results, pushing more relevant terms further down the list. This can be problematic when precision is critical, such as in **legal document searches**.
 
 Similarly, in **recommendation systems**, trigram hashing might return similar but irrelevant results. For example, a user searching for "black shoes" might see recommendations for "blue shoes" or "blazer shirts" due to trigram overlaps, degrading the accuracy of the recommendations. Handling these noisy neighbors requires additional techniques, like adjusting similarity thresholds or implementing filters.
@@ -172,7 +170,7 @@ Despite its limitations, trigram hashing remains a powerful tool for several ind
 
 3. **Embedded Systems**: In resource-limited devices like **smartphones** or **IoT devices**, trigram hashing enables tasks like **voice command recognition** or **real-time text classification** without the heavy computational load of larger models.
 
-### Conclusion: The Power of Trigram Hashing in 2024
+### Conclusion:
 
 In 2024, trigram hashing continues to offer a viable alternative for certain NLP applications, particularly when resource constraints and real-time performance are critical. Its strength lies in its:
 
