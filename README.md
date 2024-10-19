@@ -312,6 +312,22 @@ Tokenization-Free shares some similarities with FastText, like representing word
 
 **Remember:** Trigram hashing remains a valuable option for resource-constrained environments or when quick, approximate embeddings are sufficient. However, for tasks that require highly accurate embeddings or complex contextual relationships, other alternatives like Word2Vec, BERT, or ELMO might be more appropriate.
 
+## Handling Polysemy in Trigram Hashing
+
+While Trigram Hashing offers a simple and efficient method for generating embeddings, it can encounter challenges when dealing with polysemous words—words that have multiple meanings. For example, the word "bat" can refer to a flying mammal or a piece of sporting equipment.
+
+When faced with polysemy, Trigram Hashing might struggle to differentiate between the various meanings of a word. This is because the embedding generated for a polysemous word is based on the combination of its trigrams, which may not capture the nuances of its different meanings.
+
+**Addressing Polysemy:**
+
+Here are some potential strategies to mitigate the impact of polysemy on Trigram Hashing:
+
+1. **Contextual Information:** Incorporate contextual information to disambiguate polysemous words. By considering the surrounding words or phrases, it's possible to infer the intended meaning of a word and adjust the embedding accordingly. This can be achieved by incorporating additional features or using more sophisticated embedding techniques that capture contextual relationships.
+2. **Multiple Embeddings:** Generate multiple embeddings for a polysemous word, each representing a different meaning. This can be done by using different context windows or by combining Trigram Hashing with other embedding techniques that are more sensitive to context.
+3. **Hybrid Approaches:** Explore hybrid approaches that combine Trigram Hashing with other techniques, such as Word2Vec or BERT, to leverage the strengths of both methods. These hybrid models can capture both morphological similarities (from Trigram Hashing) and semantic relationships (from other techniques).
+
+By considering these strategies, you can improve the performance of Trigram Hashing in handling polysemous words and enhance its accuracy in various NLP applications.
+
 ## text-embedding-ada-002
 
 text-embedding-ada-002 is an advanced embedding model developed by OpenAI that significantly improves upon previous models for tasks such as text search, text similarity, and code search. Here are the key features and capabilities of this model:
