@@ -1,7 +1,3 @@
-Here's an improved version of your blog post. I've enhanced the clarity, flow, and added some depth to certain explanations:
-
----
-
 # Vectorization 101: Trigram Hashing for Efficient Embeddings in NLP
 
 ### Trigram Hashing: A Lightweight Alternative for Resource-Constrained NLP
