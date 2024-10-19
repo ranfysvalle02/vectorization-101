@@ -6,6 +6,14 @@ inspired by: [Tokenizer-Free Generative LLMs via Sparse Representations for Memo
 
 `https://arxiv.org/abs/2406.19223`
 
+## Introduction
+
+Trigram hashing is a simple yet effective technique for generating embeddings from textual data. It involves breaking down words into overlapping three-character sequences (trigrams) and hashing them into a fixed-size vocabulary. This approach offers several advantages, including its lightweight nature, efficient memory usage, and ability to handle noisy data.
+
+However, trigram hashing also has limitations. Its simplicity can sometimes lead to "noisy neighbors," where similar but distinct words are grouped together due to shared trigrams. This can affect the accuracy of similarity measures and retrieval tasks. Additionally, trigram hashing may not capture complex semantic relationships between words as effectively as more advanced embedding techniques like Word2Vec or BERT.
+
+**In summary**, trigram hashing is a valuable tool for certain NLP applications, particularly when resource constraints and real-time performance are critical. However, for tasks that require highly accurate embeddings or complex contextual relationships, more sophisticated methods may be necessary.
+
 ### Why Trigram Hashing in 2024?
 
 Despite the rise of advanced models, trigram hashing remains highly relevant due to its simplicity and resource efficiency. It excels in several key scenarios:
