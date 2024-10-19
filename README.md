@@ -1,4 +1,4 @@
-# Vectorization 101: Trigram Hashing for Efficient Embeddings in NLP
+# Tokenization-Free Trigram Hashing for Efficient Embeddings in NLP
 
 inspired by: [Tokenizer-Free Generative LLMs via Sparse Representations for Memory-Efficient Embeddings ](https://arxiv.org/abs/2406.19223)
 
