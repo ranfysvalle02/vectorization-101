@@ -151,5 +151,21 @@ In 2024, trigram hashing continues to offer a viable alternative for certain NLP
 As larger models become increasingly resource-intensive, trigram hashing remains a valuable, lightweight option for real-world tasks where speed and memory are just as important as accuracy.
 
 --- 
+## Trigram Hashing Alternatives: A Comparative Table
 
-This revision enhances flow, adds real-world examples, and provides a clearer explanation of trigram hashing's advantages and limitations.
+| Alternative | Description | Advantages | Disadvantages | When to Consider |
+|---|---|---|---|---|
+| **Word2Vec** | A family of neural network models that learn word embeddings by predicting surrounding words. | Captures semantic relationships between words, often producing more accurate embeddings. Can handle large vocabularies. | Computationally expensive, requires significant training data. Less flexible for handling out-of-vocabulary words. | When high-quality word embeddings and semantic relationships are crucial, and computational resources are abundant. |
+| **FastText** | An extension of Word2Vec that represents words as character n-grams, allowing for better handling of out-of-vocabulary words. | Handles out-of-vocabulary words effectively, often more efficient than Word2Vec. | May not capture semantic relationships as accurately as Word2Vec. | When dealing with noisy or inconsistent data, or when computational resources are limited. |
+| **GloVe** | A statistical model that learns word embeddings by factoring a co-occurrence matrix. | Efficient to train, often produces high-quality word embeddings. | May be less effective for capturing semantic relationships than Word2Vec. | When computational resources are limited and high-quality word embeddings are needed. |
+| **BERT** | A bidirectional transformer model that learns contextual representations of words. | Captures complex contextual relationships between words, producing highly accurate embeddings. | Computationally expensive, requires large amounts of training data. | When the highest possible accuracy is needed, and computational resources are abundant. |
+| **ELMO** | A deep contextualized word representation model that learns character-level representations and combines them to produce word-level representations. | Captures contextual information effectively, handles out-of-vocabulary words well. | Computationally expensive, requires significant training data. | When contextual information is crucial, and computational resources are abundant. |
+
+**Choosing the Right Alternative:**
+
+* **Computational Resources:** Consider the available computational resources, as some models are more demanding than others.
+* **Data Availability:** Ensure you have enough training data to effectively train the chosen model.
+* **Task Requirements:** Evaluate the specific requirements of your NLP task. If high-quality word embeddings and semantic relationships are crucial, Word2Vec or BERT might be better suited. If handling out-of-vocabulary words is a priority, FastText or ELMO could be good options.
+* **Efficiency:** If computational efficiency is a concern, trigram hashing, GloVe, or FastText might be more suitable.
+
+**Remember:** Trigram hashing remains a valuable option for resource-constrained environments or when quick, approximate embeddings are sufficient. However, for tasks that require highly accurate embeddings or complex contextual relationships, other alternatives like Word2Vec, BERT, or ELMO might be more appropriate.
