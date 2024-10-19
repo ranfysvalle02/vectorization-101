@@ -6,12 +6,6 @@ inspired by: [Tokenizer-Free Generative LLMs via Sparse Representations for Memo
 
 `https://arxiv.org/abs/2406.19223`
 
-### Trigram Hashing: A Lightweight Alternative for Resource-Constrained NLP
-
-As large-scale models like GPT-4 and BERT dominate the NLP landscape, memory-efficient techniques like trigram hashing continue to offer significant value. Especially in scenarios where resources are constrained, trigram hashing provides a flexible and efficient method for text vectorization. This blog post explores how trigram hashing works, its practical advantages, and how it handles challenges like noisy neighbors in vector stores.
-
-In today's world, many applications demand rapid, real-time processing while dealing with inconsistent or noisy data. Trigram hashing is particularly well-suited to these scenarios, offering a lightweight alternative to heavyweight, pre-trained models. Whether it’s a mobile application, an embedded device, or a real-time system, trigram hashing shines through with its efficiency and robustness.
-
 ### Why Trigram Hashing in 2024?
 
 Despite the rise of advanced models, trigram hashing remains highly relevant due to its simplicity and resource efficiency. It excels in several key scenarios:
