@@ -80,7 +80,7 @@ The noisy neighbors effect, where similar trigram structures cause embeddings to
 
 In **recommendation systems**, trigram hashing could lead to similar issues. Suppose a user is searching for products, like "black shoes," and similar-sounding but irrelevant products (like "blue shoes" or "blazer shirts") end up being recommended because their embeddings are too close in the vector space. This can reduce the accuracy of recommendations and lead to poor user experiences. In both cases, handling noisy neighbors is critical for maintaining the quality of the system’s output, requiring additional techniques such as refining the similarity threshold or implementing filtering mechanisms to mitigate these effects.
 
-### More on Applications: Where Trigram Hashing Shines
+### Where Trigram Hashing Shines
 
 Trigram hashing offers a versatile solution for several industries and products, particularly in situations where memory efficiency and real-time performance are essential. Here are some specific industries and examples:
 
@@ -88,9 +88,7 @@ Trigram hashing offers a versatile solution for several industries and products,
 
 2. **E-commerce**: For **product search engines** and **recommendation systems** in e-commerce platforms, trigram hashing can efficiently handle queries with typos or variations in product names. This is especially useful for global companies that need to accommodate different languages, as trigram hashing can assist in matching products across multiple languages without relying on an extensive, pre-built vocabulary.
 
-3. **Cross-Lingual Transfer Learning**: In multilingual NLP applications, such as **cross-border customer service chatbots** or **translation services**, trigram hashing helps systems transfer knowledge between languages with minimal pre-training. It’s especially beneficial when dealing with low-resource languages where traditional large models struggle due to the lack of annotated data.
-
-4. **Embedded Systems**: In devices like **smartphones**, **wearables**, or **IoT devices**, where memory and processing power are limited, trigram hashing provides a lightweight method for performing tasks like **voice command recognition** or **real-time text classification**. For instance, a voice assistant on a smart speaker might rely on trigram embeddings to parse and respond to user commands efficiently, without requiring the heavy computational load of larger models.
+3. **Embedded Systems**: In devices like **smartphones**, **wearables**, or **IoT devices**, where memory and processing power are limited, trigram hashing provides a lightweight method for performing tasks like **voice command recognition** or **real-time text classification**. For instance, a voice assistant on a smart speaker might rely on trigram embeddings to parse and respond to user commands efficiently, without requiring the heavy computational load of larger models.
 
 By offering a memory-efficient, flexible solution, trigram hashing is particularly well-suited to industries where data is often noisy, real-time performance is needed, and computational resources are constrained.
 
